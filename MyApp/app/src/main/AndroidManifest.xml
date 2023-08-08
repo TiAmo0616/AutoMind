@@ -15,8 +15,15 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
+        <activity android:name=".ShouyeActivity"
+            android:exported="false" />
+        <activity android:name=".DataCountActivity"
+            android:exported="false" />
+        <activity android:name=".yunjiStatusActivity"
+            android:exported="false" />
+        <activity android:name=".add_robert"
+            android:exported="false" />
+        <activity android:name=".add_company"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

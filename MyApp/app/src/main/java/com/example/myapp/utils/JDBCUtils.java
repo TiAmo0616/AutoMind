@@ -21,7 +21,7 @@ public class JDBCUtils {
             Class.forName(driver);// 动态加载类
             String ip = "192.168.1.101";// 写成本机地址，不能写成localhost，同时手机和电脑连接的网络必须是同一个
 
-            // 尝试建立到给定数据库URL的连接
+            // 尝试建立到给定数据库URL的连接192.168.1.101
             connection = DriverManager.getConnection("jdbc:mysql://" + ip + ":3306/" + dbName,
                     user, password);
 

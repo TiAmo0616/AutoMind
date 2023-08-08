@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void reg(View view){
         startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
     }
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_LONG).show();
             } else if (msg.what == 1) {
                 Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, ShouyeActivity.class);
+                startActivity(intent);
             } else if (msg.what== 2){
                 Toast.makeText(getApplicationContext(), "密码错误", Toast.LENGTH_LONG).show();
             } else if (msg.what == 3){
