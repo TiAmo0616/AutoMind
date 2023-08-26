@@ -17,13 +17,17 @@
             android:exported="false" />
         <activity android:name=".ShouyeActivity"
             android:exported="false" />
-        <activity android:name=".DataCountActivity"
+        <activity android:name=".datacount.DataCountActivity"
             android:exported="false" />
-        <activity android:name=".yunjiStatusActivity"
+        <activity android:name=".datacount.yunjiStatusActivity"
             android:exported="false" />
-        <activity android:name=".add_robert"
+        <activity android:name=".datacount.add_robert"
             android:exported="false" />
-        <activity android:name=".add_company"
+        <activity android:name=".datacount.add_company"
+            android:exported="false" />
+        <activity android:name=".map.maplist"
+            android:exported="false" />
+        <activity android:name=".datacount.liehuStatusActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

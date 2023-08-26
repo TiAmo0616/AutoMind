@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3D9F6"
+    android:background="#BBDFFA"
     >
     <RelativeLayout
         android:id="@+id/city_top_layout"
-        android:background="#880078D4"
+        android:background="#8844A3EC"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
@@ -19,6 +19,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="8dp"
+            android:onClick="back"
             android:src="@mipmap/arrow_left" />
 
 

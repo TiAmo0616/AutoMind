@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background1"
     tools:context=".MainActivity">
 
 
@@ -30,8 +29,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:background="@mipmap/logo"
-                android:visibility="visible"
-                tools:visibility="visible"></ImageView>
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout

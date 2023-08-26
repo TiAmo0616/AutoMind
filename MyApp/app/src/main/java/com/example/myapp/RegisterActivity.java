@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.myapp.dao.UserDo;
+import com.example.myapp.datacount.DataCountActivity;
 import com.example.myapp.entity.User;
 
 /**
@@ -87,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"该账号已经存在，请换一个账号",Toast.LENGTH_LONG).show();
             } else if(msg.what == 2) {
                 Toast.makeText(getApplicationContext(), "注册成功", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 Intent intent = new Intent();
                 //将想要传递的数据用putExtra封装在intent中
                 intent.putExtra("a","注册");
@@ -95,4 +97,8 @@ public class RegisterActivity extends AppCompatActivity {
             }
         }
     };
+
+    public void back(View view){
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
 }

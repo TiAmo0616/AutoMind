@@ -6,6 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapp.datacount.DataCountActivity;
+import com.example.myapp.map.maplist;
+
 public class ShouyeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +18,7 @@ public class ShouyeActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), DataCountActivity.class));
     }
     public void mapcount(View view){
-        startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+        startActivity(new Intent(getApplicationContext(), maplist.class));
     }
     public void taskstatus(View view){
         startActivity(new Intent(getApplicationContext(), RegisterActivity.class));

@@ -35,6 +35,7 @@ public class OpenDataApi {
         BaseOpenDataResultVO vo = ApiAccessApi.sendGetForOpen(session, url);
         // TODO 做数据解析
         // 根据 BaseOpenDataResultVO 实体类解析数据
+        System.out.print(vo);
     }
 
     /**
@@ -48,10 +49,11 @@ public class OpenDataApi {
      * @return
      */
     public static void wakeupDetailList(HttpSession session, String compare, String product_line,
-                                String devices, String pageIndex, String pageSize) {
+                                String devices, String pageIndex , String pageSize) {
         String url = "dataopen/wakeup_detail_list?compare="+ compare + "&product_line="+product_line+ "&devices="
                 +devices+ "&pageIndex="+pageIndex+ "&pageSize="+pageSize;
         BaseOpenDataResultVO vo = ApiAccessApi.sendGetForOpen(session, url);
+        System.out.print(vo);
         // TODO 做数据解析
         // 根据 BaseOpenDataResultVO 实体类解析数据
     }
@@ -275,7 +277,7 @@ public class OpenDataApi {
         // 创建一个模拟的HttpServletRequest对象
         HttpServletRequest request = new MockHttpServletRequest();
         HttpSession session = request.getSession();
-
+        flowList(session,"2021-01-02,2021-02-0","CM-GB01N",null,"1","1");
 
     }
 

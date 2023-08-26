@@ -102,5 +102,13 @@
             android:backgroundTint="#03A9F4"
             android:onClick="register"
             android:text="注册" />
+        <Button
+            android:id="@+id/button_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#8BF60217"
+            android:onClick="back"
+            android:text="取消" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

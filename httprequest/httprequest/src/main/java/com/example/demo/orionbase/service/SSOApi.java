@@ -34,6 +34,7 @@ public class SSOApi {
         }
         //验证企业后台免登录跳转sso token接口
         JsonObject data = ApiAccessApi.sendGet(session, url);
+
         // TODO 做数据解析
         // 根据 SSOTokenVO实体类中 user_type属性做实体转换
     }
@@ -47,9 +48,9 @@ public class SSOApi {
      * 此接口中的corpid 或者 ov_corpid 二选一必传
      * @param corpid
      * @param ov_corpid
-     * @param (必填) sso_acct_type 第三方账号类型，由我方分配，请接入方与我方沟 后通分配。例如 3part_cmcm
+     * @param sso_acct_type 第三方账号类型，由我方分配，请接入方与我方沟 后通分配。例如 3part_cmcm(必填)
      * @param sso_acct_id 第三方账号 id。如果是腾讯等平台接入请传入腾讯 等平台的 unionid 或 openid。
-     * @param (必填) sso_acct_mobile 第三方账号对应的手机号。此手机号需要在我方企业后台也存在，如果我方企业后台不存在则无法免登录。
+     * @param sso_acct_mobile 第三方账号对应的手机号。此手机号需要在我方企业后台也存在，如果我方企业后台不存在则无法免登录。(必填)
      * @param sso_acct_name 第三方账号昵称或者姓名。如果传递了此参数，免登录都我方企业后台之后，当前账号的姓名会显示 成此参数的值。
      * @param sso_acct_avatar_url 第三方账号头像 URL。如果传递了此参数，免登录 都我方企业后台之后，当前账号的头像会显示成此 参数的值
      * @return
@@ -92,12 +93,12 @@ public class SSOApi {
      * 我方可能会限制同一个 appid 的同一个用户每天获取子 页面跳转 URL 的次数，
      * 以防止每次进入我方子页面都创建新的登录态会话导致过多的会话资 源占用。
      *
-     * @param (必填) sso_acct_type  第三方账号类型，由我方分配，请接入方与我方沟 后通分配。例如 3part_cmcm
+     * @param  sso_acct_type  第三方账号类型，由我方分配，请接入方与我方沟 后通分配。例如 3part_cmcm(必填)
      * @param sso_acct_id 第三方账号 id。如果是腾讯等平台接入请传入腾讯 等平台的 unionid 或 openid。
-     * @param (必填) sso_acct_mobile  第三方账号对应的手机号。此手机号需要在我方企 业后台也存在，如果我方企业后台不存在则无法免 登录。
+     * @param sso_acct_mobile  第三方账号对应的手机号。此手机号需要在我方企 业后台也存在，如果我方企业后台不存在则无法免 登录。(必填)
      * @param sso_acct_name 第三方账号昵称或者姓名。如果传递了此参数，免 登录都我方企业后台之后，当前账号的姓名会显示 成此参数的值。
      * @param sso_acct_avatar_url 第三方账号头像 URL。如果传递了此参数，免登录 都我方企业后台之后，当前账号的头像会显示成此 参数的值
-     * @param (必填) target_route 企业后台子页面的路由地址，不同的子页面的路由地址不同，请在接入的时候与我方联系获取具体子页面的路由地址。
+     * @param target_route 企业后台子页面的路由地址，不同的子页面的路由地址不同，请在接入的时候与我方联系获取具体子页面的路由地址。(必填)
      *                     例如 /web/person/#/vipmanager
      * @param target_args 附加到跳转 URL 中的参数，格式为 json 对象字符 串。
      *                    不同的子页面可能会需要传入一些业务参数，
