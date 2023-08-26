@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My App</string>
+    <string name="taskTitle">工作数据</string>
+    <string name="rankTitle">排名数据</string>
 </resources>
