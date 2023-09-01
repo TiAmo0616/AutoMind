@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    >
+    <RelativeLayout
+        android:id="@+id/task_top"
+        android:background="#00BCD4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/task_back"
+            android:layout_width="51dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_tv_title"
+            android:text="@string/taskTitle"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/task_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8BC34A"
+        android:layout_below="@id/task_top" />
+
+
+    <LinearLayout
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/user_background">
+    <EditText
+        android:id="@+id/robertid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="机器人ID"
+        android:textColor="@color/colorBlack"
+        android:maxLines="1"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_id"
+        android:text="查询"
+        android:textSize="25sp"
+
+        android:layout_gravity="center" />
+
+
+</RelativeLayout>
