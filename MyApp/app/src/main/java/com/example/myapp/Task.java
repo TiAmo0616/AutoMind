@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,9 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.helloworld.dao.UserDo;
-import com.example.helloworld.entity.User;
-import com.example.helloworld.utils.JDBCUtils;
+import com.example.myapp.utils.JDBCUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
