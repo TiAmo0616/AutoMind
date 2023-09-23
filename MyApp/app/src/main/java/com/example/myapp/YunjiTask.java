@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.example.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.helloworld.yunji_task.CancelTask;
-import com.example.helloworld.yunji_task.ReturnToChargingDock;
-import com.example.helloworld.yunji_task.DoorControl;
+import com.example.myapp.yunji_task.CancelTask;
+import com.example.myapp.yunji_task.ReturnToChargingDock;
+import com.example.myapp.yunji_task.DoorControl;
 
 public class YunjiTask extends AppCompatActivity {
     TextView tv_id;
