@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按钮的默认状态-->
+    <item android:state_window_focused="false" android:drawable="@mipmap/microphone_white">
+    </item>
+
+    <!--按下时的按钮状态-->
+    <item android:state_pressed="true" android:drawable="@mipmap/microphone_black">
+    </item>
+
+</selector>
